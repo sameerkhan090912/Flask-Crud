@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # this is to create connection with database
 app.config['SQLALCHEMY_DATABASE_URI']="sqlite:///todo.db"
-
+app.config['DEBUG']=True
 db=SQLAlchemy(app)
 
 # this is to create tables in database but this will be the model only.
